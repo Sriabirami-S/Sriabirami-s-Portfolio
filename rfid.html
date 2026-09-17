@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RFID Access System | Sriabirami S</title>
+
+    <link rel="icon" type="image/png" href="./indeximages/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./assets/css/common/variables.css">
+    <link rel="stylesheet" href="./assets/css/common/navbar.css">
+    <link rel="stylesheet" href="./assets/css/common/footer.css">
+    <link rel="stylesheet" href="./assets/css/common/cursor.css">
+
+    <!-- Assignment CSS -->
+    <link rel="stylesheet" href="./assets/css/rfid.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-dot"></span>
+
+        <h2>Sriabirami S</h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="Projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="certification.html">Certificates</a>
+            </li>
+
+            <li>
+                <a href="protosem.html">Internship</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <a href="./assets/Sriabirami_S_Resume.pdf"
+       class="resume-btn"
+       target="_blank">
+
+        <i class="bi bi-file-earmark-person"></i>
+
+        Resume
+
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="assignment-detail-hero">
+
+    <span class="detail-tag">
+
+        <i class="bi bi-credit-card-2-front"></i>
+
+        IoT Assignment
+
+    </span>
+
+
+    <h1>
+        RFID Access System
+    </h1>
+
+
+    <h2>
+        ESP32 + RC522 + Google Sheets
+    </h2>
+
+
+    <p>
+
+        An IoT-based RFID authentication and access control
+        system using ESP32, RC522 RFID reader, LCD, servo motor,
+        RTC and Google Sheets for real-time access logging.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="assignment-content">
+
+
+
+<!-- =====================================================
+     01 PROJECT OVERVIEW
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>01</span>
+
+        <div>
+
+            <h2>Project Overview</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="split-section">
+
+        <div class="split-text">
+
+            <p>
+
+                This system authenticates RFID cards using an
+                <strong>ESP32</strong> and provides physical access
+                control using a servo motor.
+
+            </p>
+
+
+            <p>
+
+                When an RFID card is scanned, the system checks its
+                UID against a predefined authorized UID.
+
+            </p>
+
+
+            <p>
+
+                Authorized and unauthorized access attempts are
+                displayed on a 16x2 LCD and logged in real-time
+                to Google Sheets using Wi-Fi.
+
+            </p>
+
+        </div>
+
+
+        <div class="single-image">
+
+            <img
+                src="./rfidimgs/rfidckt.jpg"
+                alt="RFID Access System Circuit"
+            >
+
+            <p class="image-caption">
+                RFID Access System Circuit
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     02 COMPONENTS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+
+            <h2>Components Used</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="equipment-grid">
+
+        <div class="equipment-item">
+
+            <i class="bi bi-cpu"></i>
+
+            ESP32
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-credit-card-2-front"></i>
+
+            RC522 RFID Reader
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-display"></i>
+
+            16x2 LCD with I2C
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-arrow-repeat"></i>
+
+            Servo Motor
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-clock"></i>
+
+            DS1302 RTC Module
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-lightbulb"></i>
+
+            LED and Buzzer
+
+        </div>
+
+
+        <div class="equipment-item">
+
+            <i class="bi bi-file-earmark-spreadsheet"></i>
+
+            Google Sheet
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     03 RFID CONNECTIONS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>03</span>
+
+        <div>
+
+            <h2>RFID to ESP32 Connections</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="connection-grid">
+
+        <div class="connection-item">
+
+            <span>SDA</span>
+
+            <strong>→ GPIO5</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>SCK</span>
+
+            <strong>→ GPIO18</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>MOSI</span>
+
+            <strong>→ GPIO23</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>MISO</span>
+
+            <strong>→ GPIO19</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>RST</span>
+
+            <strong>→ GPIO4</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>VCC</span>
+
+            <strong>→ 3.3V</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>GND</span>
+
+            <strong>→ GND</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     04 CIRCUIT COMPONENT CONNECTIONS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>04</span>
+
+        <div>
+
+            <h2>Circuit Components</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="connection-grid">
+
+        <div class="connection-item">
+
+            <span>LED</span>
+
+            <strong>→ GPIO2</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>Buzzer</span>
+
+            <strong>→ GPIO15</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>Servo</span>
+
+            <strong>→ GPIO13</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>RTC CLK</span>
+
+            <strong>→ GPIO14</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>RTC DAT</span>
+
+            <strong>→ GPIO27</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>RTC RST</span>
+
+            <strong>→ GPIO26</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     05 ESP32 CODE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>05</span>
+
+        <div>
+
+            <h2>ESP32 RFID Code</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The following Arduino code reads the RFID card UID,
+        compares it with the authorized UID and controls the
+        LED, buzzer, LCD and servo motor accordingly.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+#include &lt;SPI.h&gt;
+#include &lt;MFRC522.h&gt;
+#include &lt;ESP32Servo.h&gt;
+#include &lt;ThreeWire.h&gt;
+#include &lt;RtcDS1302.h&gt;
+#include &lt;WiFi.h&gt;
+#include &lt;HTTPClient.h&gt;
+
+#define SS_PIN 5
+#define RST_PIN 4
+#define LED_PIN 2
+#define BUZZER_PIN 15
+#define SERVO_PIN 13
+
+#define DS1302_CLK 14
+#define DS1302_IO 27
+#define DS1302_CE 26
+
+byte knownUID[] = {
+    0xED, 0x0D, 0x0C, 0x32
+};
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+MFRC522 mfrc522(
+    SS_PIN,
+    RST_PIN
+);
+
+Servo gateServo;
+
+ThreeWire myWire(
+    DS1302_IO,
+    DS1302_CLK,
+    DS1302_CE
+);
+
+RtcDS1302&lt;ThreeWire&gt; Rtc(myWire);
+
+const char* ssid =
+    "YOUR_WIFI_SSID";
+
+const char* password =
+    "YOUR_WIFI_PASSWORD";
+
+const String scriptURL =
+    "https://script.google.com/macros/s/XXXXXXXXXXXX/exec";
+
+
+void setup() {
+
+    Serial.begin(115200);
+
+    SPI.begin();
+
+    mfrc522.PCD_Init();
+
+    pinMode(LED_PIN, OUTPUT);
+
+    pinMode(BUZZER_PIN, OUTPUT);
+
+    lcd.begin();
+
+    lcd.backlight();
+
+    lcd.setCursor(0, 0);
+
+    lcd.print("Scan your card");
+
+    gateServo.setPeriodHertz(50);
+
+    gateServo.attach(
+        SERVO_PIN,
+        500,
+        2400
+    );
+
+    gateServo.write(0);
+
+    Rtc.Begin();
+
+    RtcDateTime customTime(
+        2025,
+        4,
+        19,
+        15,
+        45,
+        00
+    );
+
+    Rtc.SetDateTime(customTime);
+
+    if (!Rtc.IsDateTimeValid())
+        Serial.println(
+            "RTC DateTime invalid!"
+        );
+
+    if (!Rtc.GetIsRunning()) {
+
+        Serial.println(
+            "Starting RTC..."
+        );
+
+        Rtc.SetIsRunning(true);
+    }
+
+
+    WiFi.begin(
+        ssid,
+        password
+    );
+
+    Serial.print(
+        "Connecting to WiFi"
+    );
+
+    while (
+        WiFi.status() != WL_CONNECTED
+    ) {
+
+        delay(500);
+
+        Serial.print(".");
+    }
+
+    Serial.println(
+        "\nWiFi connected."
+    );
+}
+
+
+void loop() {
+
+    if (
+        !mfrc522.PICC_IsNewCardPresent()
+        ||
+        !mfrc522.PICC_ReadCardSerial()
+    ) {
+
+        return;
+    }
+
+
+    bool match = true;
+
+    String uidStr = "";
+
+
+    lcd.clear();
+
+    lcd.setCursor(0, 0);
+
+    lcd.print("UID: ");
+
+
+    for (
+        byte i = 0;
+        i &lt; mfrc522.uid.size;
+        i++
+    ) {
+
+        byte val =
+            mfrc522.uid.uidByte[i];
+
+        uidStr +=
+            String(val, HEX);
+
+        lcd.print(
+            val,
+            HEX
+        );
+
+
+        if (
+            i &lt;
+            mfrc522.uid.size - 1
+        ) {
+
+            lcd.print(":");
+
+            uidStr += ":";
+        }
+
+
+        if (
+            val != knownUID[i]
+        ) {
+
+            match = false;
+        }
+    }
+
+
+    uidStr.toUpperCase();
+
+
+    if (match) {
+
+        Serial.println(
+            "Access Granted"
+        );
+
+        lcd.setCursor(0, 1);
+
+        lcd.print(
+            "Access: Granted"
+        );
+
+        digitalWrite(
+            LED_PIN,
+            HIGH
+        );
+
+        digitalWrite(
+            BUZZER_PIN,
+            HIGH
+        );
+
+        gateServo.write(180);
+
+        delay(500);
+
+        digitalWrite(
+            LED_PIN,
+            LOW
+        );
+
+        digitalWrite(
+            BUZZER_PIN,
+            LOW
+        );
+
+        delay(3000);
+
+        gateServo.write(0);
+
+        sendToGoogleSheet(
+            uidStr,
+            "Granted"
+        );
+
+    }
+
+
+    else {
+
+        Serial.println(
+            "Access Denied"
+        );
+
+        lcd.setCursor(0, 1);
+
+        lcd.print(
+            "Access: Denied"
+        );
+
+
+        for (
+            int i = 0;
+            i &lt; 3;
+            i++
+        ) {
+
+            digitalWrite(
+                LED_PIN,
+                HIGH
+            );
+
+            digitalWrite(
+                BUZZER_PIN,
+                HIGH
+            );
+
+            delay(200);
+
+            digitalWrite(
+                LED_PIN,
+                LOW
+            );
+
+            digitalWrite(
+                BUZZER_PIN,
+                LOW
+            );
+
+            delay(200);
+        }
+
+
+        sendToGoogleSheet(
+            uidStr,
+            "Denied"
+        );
+    }
+
+
+    RtcDateTime now =
+        Rtc.GetDateTime();
+
+    printDateTime(now);
+
+
+    mfrc522.PICC_HaltA();
+
+    mfrc522.PCD_StopCrypto1();
+
+    delay(1000);
+}
+
+
+void sendToGoogleSheet(
+    String uid,
+    String status
+) {
+
+    if (
+        WiFi.status() ==
+        WL_CONNECTED
+    ) {
+
+        HTTPClient http;
+
+        String fullURL =
+            scriptURL +
+            "?uid=" +
+            uid +
+            "&amp;status=" +
+            status;
+
+        http.begin(fullURL);
+
+        int httpCode =
+            http.GET();
+
+
+        if (httpCode &gt; 0) {
+
+            Serial.print(
+                "Data sent: "
+            );
+
+            Serial.println(
+                httpCode
+            );
+
+        }
+
+        else {
+
+            Serial.print(
+                "Failed to send. Code: "
+            );
+
+            Serial.println(
+                httpCode
+            );
+        }
+
+
+        http.end();
+
+    }
+
+    else {
+
+        Serial.println(
+            "WiFi not connected"
+        );
+    }
+}
+
+
+void printDateTime(
+    const RtcDateTime&amp; dt
+) {
+
+    char buf[20];
+
+    snprintf_P(
+        buf,
+        sizeof(buf),
+        PSTR(
+            "%02u/%02u/%04u %02u:%02u:%02u"
+        ),
+        dt.Month(),
+        dt.Day(),
+        dt.Year(),
+        dt.Hour(),
+        dt.Minute(),
+        dt.Second()
+    );
+
+    Serial.println(buf);
+}</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     06 GOOGLE SHEETS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>06</span>
+
+        <div>
+
+            <h2>Integration with Google Sheets</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The ESP32 sends the RFID UID and access status to a
+        Google Apps Script Web App. The script records the
+        timestamp, UID and access status in Google Sheets.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>function doPost(e) {
+
+    var ss =
+        SpreadsheetApp.openById(
+            "YOUR_SHEET_ID"
+        );
+
+    var sheet =
+        ss.getSheetByName("Sheet1");
+
+    var uid =
+        e.parameter.uid;
+
+    var status =
+        e.parameter.status;
+
+    var timestamp =
+        new Date();
+
+    sheet.appendRow([
+        timestamp,
+        uid,
+        status
+    ]);
+
+    return ContentService
+        .createTextOutput(
+            "Success"
+        );
+}</code></pre>
+
+    </div>
+
+
+    <div class="highlight-box">
+
+        <strong>Logging:</strong>
+
+        Each RFID scan is recorded with its timestamp,
+        UID and access status, allowing authorized and
+        unauthorized attempts to be monitored remotely.
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     07 OUTPUT DEMO
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>07</span>
+
+        <div>
+
+            <h2>Output Demo</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="image-gallery">
+
+        <div class="gallery-card">
+
+            <img
+                src="./rfidimgs/rfidckt.jpg"
+                alt="RFID Circuit"
+            >
+
+            <p class="image-caption">
+                RFID Circuit Setup
+            </p>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./rfidimgs/rfidoutput.png"
+                alt="RFID System Output"
+            >
+
+            <p class="image-caption">
+                RFID System Output
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="video-wrapper">
+
+        <video
+            class="output-video"
+            controls
+            muted
+        >
+
+            <source
+                src="./rfidimgs/rfid-video.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     08 CONCLUSION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>08</span>
+
+        <div>
+
+            <h2>Conclusion</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        This assignment helped integrate multiple modules including
+        RFID, LCD, servo, RTC and Wi-Fi to build a real-time,
+        interactive access control system.
+
+    </p>
+
+
+    <p>
+
+        The system demonstrates RFID authentication, physical
+        access control and cloud-based logging using ESP32 and
+        Google Sheets.
+
+    </p>
+
+
+    <div class="documentation-box">
+
+        <div>
+
+            <i class="bi bi-file-earmark-pdf-fill"></i>
+
+            <div>
+
+                <h3>Assignment Documentation</h3>
+
+                <p>
+                    View the complete RFID Access System documentation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://github.com/Sriabirami-S/Internship/blob/main/Assignments/RFID.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="documentation-btn"
+        >
+
+            <i class="bi bi-file-earmark-text"></i>
+
+            View Documentation
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-icons">
+
+            <a
+                href="https://www.linkedin.com/in/sriabiramis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abiramisaravanan100@gmail.com"
+                aria-label="Email"
+            >
+                <i class="bi bi-envelope"></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/abi__0210/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                <i class="bi bi-instagram"></i>
+            </a>
+
+
+            <a
+                href="tel:+9361275297"
+                aria-label="Phone"
+            >
+                <i class="bi bi-telephone"></i>
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026
+            <span class="footer-name">Sriabirami S</span>.
+            Built with passion for software development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<div class="pointer"></div>
+
+
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/cursor.js"></script>
+
+</body>
+
+</html>

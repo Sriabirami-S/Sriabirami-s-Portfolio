@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROS 2 & Gazebo Simulation | Sriabirami S</title>
+
+    <link rel="icon" type="image/png" href="./indeximages/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./assets/css/common/variables.css">
+    <link rel="stylesheet" href="./assets/css/common/navbar.css">
+    <link rel="stylesheet" href="./assets/css/common/footer.css">
+    <link rel="stylesheet" href="./assets/css/common/cursor.css">
+
+    <!-- Assignment CSS -->
+    <link rel="stylesheet" href="./assets/css/ros.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-dot"></span>
+
+        <h2>Sriabirami S</h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="Projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="certification.html">Certificates</a>
+            </li>
+
+            <li>
+                <a href="protosem.html">Internship</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+   <a href="./assets/Sriabirami_S_Resume.pdf"
+       class="resume-btn"
+       target="_blank">
+
+        <i class="bi bi-file-earmark-person"></i>
+
+        Resume
+
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="assignment-detail-hero">
+
+    <span class="detail-tag">
+
+        <i class="bi bi-robot"></i>
+
+        Robotics Assignment
+
+    </span>
+
+
+    <h1>
+        ROS 2 & Gazebo Simulation
+    </h1>
+
+
+    <h2>
+        ROS 2 Humble + URDF/Xacro + RViz2 + Gazebo
+    </h2>
+
+
+    <p>
+
+        A practical workflow for setting up ROS 2 Humble,
+        creating robot description files using URDF/Xacro,
+        visualizing robots in RViz2 and simulating them
+        using Gazebo.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="assignment-content">
+
+
+
+<!-- =====================================================
+     01 ROS 2
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>01</span>
+
+        <div>
+
+            <h2>What is ROS 2?</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        <strong>ROS 2 (Robot Operating System 2)</strong> is an
+        open-source robotics middleware used to build scalable
+        and real-time robotic systems.
+
+    </p>
+
+
+    <p>
+
+        It provides tools for distributed communication,
+        hardware abstraction, robot simulation and visualization.
+        ROS 2 can be integrated with simulation platforms such as
+        Gazebo and visualization tools such as RViz2.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     02 SYSTEM REQUIREMENTS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+
+            <h2>System Requirements</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="spec-grid">
+
+        <div class="spec-item">
+
+            <i class="bi bi-pc-display"></i>
+
+            <div>
+
+                <span>Operating System</span>
+
+                <strong>Ubuntu 22.04 LTS (64-bit)</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-cpu"></i>
+
+            <div>
+
+                <span>Processor</span>
+
+                <strong>Dual / Quad Core</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-memory"></i>
+
+            <div>
+
+                <span>RAM</span>
+
+                <strong>Minimum 4 GB</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-device-ssd"></i>
+
+            <div>
+
+                <span>Recommended RAM</span>
+
+                <strong>8 - 16 GB</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-hdd"></i>
+
+            <div>
+
+                <span>Disk Space</span>
+
+                <strong>Approximately 5 GB</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-gpu-card"></i>
+
+            <div>
+
+                <span>GPU</span>
+
+                <strong>Integrated GPU Supported</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     03 SPACE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>03</span>
+
+        <div>
+
+            <h2>Space Occupied</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="spec-grid">
+
+        <div class="spec-item">
+
+            <i class="bi bi-box"></i>
+
+            <div>
+
+                <span>ROS 2 Humble Desktop</span>
+
+                <strong>Approximately 2.5 GB</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-grid-3x3-gap"></i>
+
+            <div>
+
+                <span>Gazebo Simulator</span>
+
+                <strong>Approximately 1 - 2 GB</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-hdd-stack"></i>
+
+            <div>
+
+                <span>Total Space</span>
+
+                <strong>Approximately 4 - 5 GB</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     04 INSTALL ROS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>04</span>
+
+        <div>
+
+            <h2>Installing ROS 2 Humble</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The following commands can be used to configure the
+        required locale, repository and install ROS 2 Humble Desktop.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>sudo apt update
+sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+
+sudo apt install curl gnupg2 lsb-release
+
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+  -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
+http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" \
+| sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+sudo apt update
+sudo apt install ros-humble-desktop ros-dev-tools</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     05 SOURCE ENVIRONMENT
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>05</span>
+
+        <div>
+
+            <h2>Source Environment</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        After installing ROS 2, source the ROS environment so that
+        ROS commands are available in the terminal.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     06 WORKSPACE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>06</span>
+
+        <div>
+
+            <h2>ROS 2 Workspace Setup</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        A ROS 2 workspace provides a structured location for
+        developing and building robot packages.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws
+colcon build
+source install/setup.bash</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     07 URDF XACRO
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>07</span>
+
+        <div>
+
+            <h2>Creating URDF / Xacro Files</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Robot components can be designed using CAD software and
+        exported as <strong>.STL</strong> files. These components
+        can then be described using URDF/Xacro files.
+
+    </p>
+
+
+    <div class="single-image centered-image">
+
+        <img
+            src="./rosimgs/rosdes.png"
+            alt="Final Robot Design"
+        >
+
+        <p class="image-caption">
+            Final Robot Design
+        </p>
+
+    </div>
+
+
+    <div class="procedure-list">
+
+        <ul>
+
+            <li>
+                Export robot parts from Fusion 360 as
+                <strong>.STL</strong> files.
+            </li>
+
+            <li>
+                Create a ROS 2 description package.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="code-block">
+
+<pre><code>cd ~/ros2_ws/src
+
+ros2 pkg create \
+--build-type ament_cmake \
+my_robot_description</code></pre>
+
+    </div>
+
+
+    <h3 class="subheading">
+        Package Structure
+    </h3>
+
+
+    <div class="code-block">
+
+<pre><code>my_robot_description/
+├── urdf/
+│   ├── robot.urdf.xacro
+│   ├── base.xacro
+│   └── wheel.xacro
+└── launch/
+    └── display.launch.py</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     08 RVIZ
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>08</span>
+
+        <div>
+
+            <h2>Build & View in RViz2</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        After creating the robot description package, build the
+        workspace and launch the robot model in RViz2.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>cd ~/ros2_ws
+
+colcon build
+
+source install/setup.bash
+
+ros2 launch my_robot_description display.launch.py</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     09 GAZEBO
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>09</span>
+
+        <div>
+
+            <h2>Run Simulation in Gazebo</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Gazebo can be used to simulate the robot in a virtual
+        environment. Create a Gazebo launch file inside the
+        package's launch directory.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>ros2 launch my_robot_description gazebo.launch.py</code></pre>
+
+    </div>
+
+
+    <h3 class="subheading">
+        Manual Robot Spawning
+    </h3>
+
+
+    <p>
+
+        Alternatively, the robot can be spawned manually using
+        the following command:
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>ros2 run gazebo_ros spawn_entity.py \
+  -topic /robot_description \
+  -entity my_bot \
+  -x 0 -y 0 -z 1</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     10 GAZEBO PLUGIN
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>10</span>
+
+        <div>
+
+            <h2>Add Gazebo Plugin</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Gazebo plugins can be added to the robot description
+        to enable additional simulation functionality.
+
+    </p>
+
+
+    <div class="code-block">
+
+<pre><code>&lt;gazebo&gt;
+  &lt;plugin
+      name="gazebo_ros_control"
+      filename="libgazebo_ros2_control.so"/&gt;
+&lt;/gazebo&gt;</code></pre>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     11 SIMULATION VIDEO
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>11</span>
+
+        <div>
+
+            <h2>Gazebo Simulation Preview</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The completed robot model was tested in the Gazebo
+        simulation environment.
+
+    </p>
+
+
+    <div class="video-container">
+
+        <video controls>
+
+            <source
+                src="./rosimgs/gazebo simulation of another robot.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     12 CONCLUSION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>12</span>
+
+        <div>
+
+            <h2>Conclusion</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        This assignment provided a complete workflow for working
+        with <strong>ROS 2 Humble</strong>, from installation and
+        workspace configuration to robot modeling and simulation.
+
+    </p>
+
+
+    <p>
+
+        The workflow covered URDF/Xacro creation, RViz2
+        visualization and Gazebo simulation, providing practical
+        experience in robot description and virtual testing.
+
+    </p>
+
+
+    <div class="documentation-box">
+
+        <div>
+
+            <i class="bi bi-file-earmark-pdf-fill"></i>
+
+            <div>
+
+                <h3>Assignment Documentation</h3>
+
+                <p>
+                    View the complete ROS 2 & Gazebo documentation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://github.com/Sriabirami-S/Internship/tree/main/Assignments/ROS2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="documentation-btn"
+        >
+
+            <i class="bi bi-file-earmark-text"></i>
+
+            View Documentation
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-icons">
+
+            <a
+                href="https://www.linkedin.com/in/sriabiramis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abiramisaravanan100@gmail.com"
+                aria-label="Email"
+            >
+                <i class="bi bi-envelope"></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/abi__0210/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                <i class="bi bi-instagram"></i>
+            </a>
+
+
+            <a
+                href="tel:+9361275297"
+                aria-label="Phone"
+            >
+                <i class="bi bi-telephone"></i>
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026
+            <span class="footer-name">Sriabirami S</span>.
+            Built with passion for software development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<div class="pointer"></div>
+
+
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/cursor.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+html,
+body {
+
+    width: 100%;
+    min-height: 100%;
+
+}
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #050816 0%,
+            #081221 45%,
+            #050816 100%
+        );
+
+    color: white;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   ASSIGNMENT HERO
+========================================= */
+
+.assignment-hero {
+
+    padding: 120px 10% 70px;
+
+    text-align: center;
+
+}
+
+
+.assignment-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    background: rgba(56, 189, 248, 0.1);
+
+    border: 1px solid rgba(56, 189, 248, 0.4);
+
+    border-radius: 50px;
+
+    color: #38bdf8;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 25px;
+
+    font-weight: 600;
+
+}
+
+
+.assignment-hero h1 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 60px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.assignment-hero p {
+
+    width: 65%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 32px;
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================
+   ASSIGNMENTS SECTION
+========================================= */
+
+.assignments-section {
+
+    width: 88%;
+
+    margin: 20px auto 100px;
+
+}
+
+
+.assignments-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   ASSIGNMENT CARD
+========================================= */
+
+.assignment-frame {
+
+    position: relative;
+
+    min-height: 240px;
+
+    padding: 35px 25px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(16px);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+/* =========================================
+   OLD FEATURE — HOVER FILL
+========================================= */
+
+.assignment-frame::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b5a91,
+            #38bdf8,
+            #0b5a91
+        );
+
+    transition: left 0.45s ease;
+
+    z-index: 0;
+
+}
+
+
+/* Fill the card */
+
+.assignment-frame:hover::before {
+
+    left: 0;
+
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.assignment-frame:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 30px rgba(56, 189, 248, 0.25),
+        0 0 50px rgba(9, 78, 136, 0.2);
+
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.assignment-number {
+
+    position: absolute;
+
+    top: 18px;
+    left: 20px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #64748b;
+
+    z-index: 2;
+
+    transition: 0.4s ease;
+
+}
+
+
+.assignment-icon {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 18px;
+
+    background: rgba(56, 189, 248, 0.1);
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    color: #38bdf8;
+
+    font-size: 25px;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        color 0.4s ease;
+
+}
+
+
+.assignment-frame h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    transition: color 0.4s ease;
+
+}
+
+
+.assignment-arrow {
+
+    position: absolute;
+
+    right: 20px;
+    bottom: 18px;
+
+    z-index: 2;
+
+    font-size: 18px;
+
+    color: #64748b;
+
+    transition:
+        transform 0.4s ease,
+        color 0.4s ease;
+
+}
+
+
+/* =========================================
+   HOVER CONTENT
+========================================= */
+
+.assignment-frame:hover .assignment-number {
+
+    color: rgba(8, 18, 33, 0.65);
+
+}
+
+
+.assignment-frame:hover .assignment-icon {
+
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border-color: rgba(255, 255, 255, 0.4);
+
+    color: #081221;
+
+}
+
+
+.assignment-frame:hover h2 {
+
+    color: #081221;
+
+}
+
+
+.assignment-frame:hover .assignment-arrow {
+
+    color: #081221;
+
+    transform: translate(4px, -4px);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+
+    margin-top: 80px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .assignments-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .assignment-hero {
+
+        padding-top: 100px;
+
+    }
+
+
+    .assignment-hero h1 {
+
+        font-size: 46px;
+
+    }
+
+
+    .assignment-hero p {
+
+        width: 85%;
+
+    }
+
+
+    .assignments-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .assignment-hero {
+
+        padding:
+            90px 20px 50px;
+
+    }
+
+
+    .assignment-hero h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .assignment-hero p {
+
+        width: 100%;
+
+        font-size: 16px;
+
+        line-height: 28px;
+
+    }
+
+
+    .assignment-tag {
+
+        font-size: 13px;
+
+    }
+
+
+    .assignments-section {
+
+        width: 92%;
+
+        margin-bottom: 70px;
+
+    }
+
+
+    .assignments-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+
+    .assignment-frame {
+
+        min-height: 210px;
+
+    }
+
+
+    .assignment-frame h2 {
+
+        font-size: 20px;
+
+    }
+
+}

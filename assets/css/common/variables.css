@@ -1,0 +1,58 @@
+:root{
+
+    /* ===== COLORS ===== */
+
+    --bg-color:#000000;
+
+    --section-color:#050505;
+
+    --card-color:#111111;
+
+    --card-hover:#171717;
+
+    --primary-color:rgb(18,145,236);
+
+    --primary-hover:rgb(50,170,255);
+
+    --text-color:#ffffff;
+
+    --paragraph-color:#c3d3e4;
+
+    --muted-color:#8ea4bb;
+
+    --border-color:rgba(56,189,248,.1);
+
+    --border-hover:#38BDF8;
+
+    /* ===== SHADOWS ===== */
+
+    --shadow-sm:
+        0 5px 18px rgba(0,0,0,.25);
+
+    --shadow-md:
+        0 10px 30px rgba(0,0,0,.35);
+
+    --shadow-lg:
+        0 0 25px rgba(18,145,236,.18);
+
+    /* ===== GLASS ===== */
+
+    --glass:
+        rgba(8,15,28,.78);
+
+    --glass-scroll:
+        rgba(6,12,22,.92);
+
+    /* ===== BORDER RADIUS ===== */
+
+    --radius-sm:12px;
+
+    --radius-md:18px;
+
+    --radius-lg:24px;
+
+    /* ===== TRANSITION ===== */
+
+    --transition:.35s ease;
+
+}

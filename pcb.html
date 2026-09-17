@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PIR Motion Sensor – PCB Design | Sriabirami S</title>
+
+    <link rel="icon" type="image/png" href="./indeximages/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./assets/css/common/variables.css">
+    <link rel="stylesheet" href="./assets/css/common/navbar.css">
+    <link rel="stylesheet" href="./assets/css/common/footer.css">
+    <link rel="stylesheet" href="./assets/css/common/cursor.css">
+
+    <!-- PCB Assignment CSS -->
+    <link rel="stylesheet" href="./assets/css/pcb.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-dot"></span>
+
+        <h2>Sriabirami S</h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="Projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="certification.html">Certificates</a>
+            </li>
+
+            <li>
+                <a href="protosem.html">Internship</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+   <a href="./assets/Sriabirami_S_Resume.pdf"
+       class="resume-btn"
+       target="_blank">
+
+        <i class="bi bi-file-earmark-person"></i>
+
+        Resume
+
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="assignment-detail-hero">
+
+    <span class="detail-tag">
+
+        <i class="bi bi-cpu"></i>
+
+        Engineering Assignment
+
+    </span>
+
+
+    <h1>
+        PIR Motion Sensor
+    </h1>
+
+
+    <h2>
+        PCB Design using KiCad
+    </h2>
+
+
+    <p>
+
+        Designing a compact motion detection PCB using an
+        HC-SR501 PIR sensor, ESP8266MOD and supporting
+        components, from schematic design to 3D PCB visualization.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="assignment-content">
+
+
+
+<!-- =====================================================
+     01 INTRODUCTION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>01</span>
+
+        <div>
+
+            <h2>Introduction</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="split-section">
+
+        <div class="split-text">
+
+            <p>
+
+                This project involves designing a basic motion
+                detection circuit using a
+                <strong>PIR (Passive Infrared) sensor</strong>.
+
+            </p>
+
+
+            <p>
+
+                The goal was to create a compact and reliable
+                <strong>PCB layout</strong> that interfaces a
+                PIR sensor with an <strong>ESP8266</strong>
+                and other passive components.
+
+            </p>
+
+
+            <p>
+
+                The complete board was designed in
+                <strong>KiCad</strong>, starting from the schematic
+                and progressing through PCB layout and 3D
+                visualization.
+
+            </p>
+
+        </div>
+
+
+        <div class="single-image">
+
+            <img
+                src="./pcbimgs/pcbckt.png"
+                alt="PIR Motion Sensor PCB Circuit"
+            >
+
+            <p class="image-caption">
+                PIR Motion Sensor Circuit
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     02 DESIGN OVERVIEW
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+
+            <h2>Design Overview</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="spec-grid">
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-broadcast"></i>
+
+            <div>
+
+                <span>Sensor Module</span>
+
+                <strong>HC-SR501 PIR Sensor</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-cpu"></i>
+
+            <div>
+
+                <span>Microcontroller</span>
+
+                <strong>ESP8266MOD (NodeMCU)</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-lightning-charge"></i>
+
+            <div>
+
+                <span>Voltage Regulator</span>
+
+                <strong>AMS1117 3.3V LDO</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-lightbulb"></i>
+
+            <div>
+
+                <span>Output</span>
+
+                <strong>LED Indicator</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-tools"></i>
+
+            <div>
+
+                <span>Design Software</span>
+
+                <strong>KiCad 7</strong>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     03 CIRCUIT DESCRIPTION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>03</span>
+
+        <div>
+
+            <h2>Circuit Description</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The PIR sensor detects motion and sends a HIGH signal
+        to the ESP8266. The ESP8266 can then be programmed to
+        trigger an LED or send the detected motion data to
+        a cloud service such as Google Sheets.
+
+    </p>
+
+
+    <p>
+
+        The board uses an <strong>AMS1117 voltage regulator</strong>
+        to convert the 5V input supply to 3.3V required by
+        the ESP8266.
+
+    </p>
+
+
+    <div class="single-image centered-image">
+
+        <img
+            src="./pcbimgs/pcbckt.png"
+            alt="PCB Circuit Schematic"
+        >
+
+        <p class="image-caption">
+            Circuit Design
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     04 PCB DESIGN STEPS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>04</span>
+
+        <div>
+
+            <h2>PCB Design Steps</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-item">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <div>
+
+                <h3>Schematic Design</h3>
+
+                <p>
+                    Designed the complete circuit in KiCad
+                    with appropriate component connections
+                    and pin mapping.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <div>
+
+                <h3>Footprint Selection</h3>
+
+                <p>
+                    Added suitable footprints for the ESP8266,
+                    PIR sensor, regulator and other components.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <div>
+
+                <h3>PCB Routing</h3>
+
+                <p>
+                    Created a two-layer PCB layout with
+                    organized component placement and clean
+                    signal paths.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <div class="process-number">
+                04
+            </div>
+
+            <div>
+
+                <h3>3D Verification</h3>
+
+                <p>
+                    Verified the final board using KiCad's
+                    3D Viewer before preparing the design
+                    for manufacturing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     05 DESIGN PREVIEWS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>05</span>
+
+        <div>
+
+            <h2>Design Previews</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The following views show the progression of the PCB
+        design from schematic representation to the final
+        board layout and 3D visualization.
+
+    </p>
+
+
+    <div class="image-gallery">
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./pcbimgs/pcbschematic.png"
+                alt="PCB Schematic"
+            >
+
+            <p class="image-caption">
+                PCB Schematic
+            </p>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./pcbimgs/pcblayout.png"
+                alt="PCB Layout"
+            >
+
+            <p class="image-caption">
+                PCB Layout
+            </p>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./pcbimgs/pcb3d.png"
+                alt="PCB 3D View"
+            >
+
+            <p class="image-caption">
+                PCB 3D View
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     06 LEARNING OUTCOMES
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>06</span>
+
+        <div>
+
+            <h2>Learning Outcomes</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="outcome-grid">
+
+
+        <div class="outcome-item">
+
+            <i class="bi bi-diagram-3"></i>
+
+            <h3>Circuit Design</h3>
+
+            <p>
+                Gained practical experience in converting
+                a circuit concept into a complete schematic.
+            </p>
+
+        </div>
+
+
+        <div class="outcome-item">
+
+            <i class="bi bi-grid-3x3-gap"></i>
+
+            <h3>PCB Layout</h3>
+
+            <p>
+                Learned component placement, routing and
+                organization of a two-layer PCB.
+            </p>
+
+        </div>
+
+
+        <div class="outcome-item">
+
+            <i class="bi bi-box"></i>
+
+            <h3>3D Visualization</h3>
+
+            <p>
+                Used KiCad's 3D Viewer to inspect the
+                physical appearance of the designed board.
+            </p>
+
+        </div>
+
+
+        <div class="outcome-item">
+
+            <i class="bi bi-gear"></i>
+
+            <h3>Manufacturing Preparation</h3>
+
+            <p>
+                Understood the basics of preparing PCB
+                designs and Gerber files for manufacturing.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     07 CONCLUSION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>07</span>
+
+        <div>
+
+            <h2>Conclusion</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        This project provided practical experience in converting
+        a simple motion-sensing circuit into a professional PCB
+        layout using <strong>KiCad</strong>.
+
+    </p>
+
+
+    <p>
+
+        It also helped develop an understanding of component
+        placement, signal routing, analog-digital separation,
+        PCB visualization and preparing Gerber files for
+        manufacturing.
+
+    </p>
+
+
+    <div class="documentation-box">
+
+        <div>
+
+            <i class="bi bi-folder2-open"></i>
+
+            <div>
+
+                <h3>PCB Design Work</h3>
+
+                <p>
+                    View the complete PCB design files and work.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://drive.google.com/drive/folders/1D-lUWtSolMtM7v4oyMhLSt7UpHm6Di8F?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="documentation-btn"
+        >
+
+            <i class="bi bi-box-arrow-up-right"></i>
+
+            View Work
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-icons">
+
+            <a
+                href="https://www.linkedin.com/in/sriabiramis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abiramisaravanan100@gmail.com"
+                aria-label="Email"
+            >
+                <i class="bi bi-envelope"></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/abi__0210/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                <i class="bi bi-instagram"></i>
+            </a>
+
+
+            <a
+                href="tel:+9361275297"
+                aria-label="Phone"
+            >
+                <i class="bi bi-telephone"></i>
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026
+            <span class="footer-name">Sriabirami S</span>.
+            Built with passion for software development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<div class="pointer"></div>
+
+
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/cursor.js"></script>
+
+</body>
+
+</html>

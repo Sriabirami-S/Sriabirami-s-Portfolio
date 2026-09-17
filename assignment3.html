@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PIR Motion Sensor | Sriabirami S</title>
+
+    <link rel="icon" type="image/png" href="./indeximages/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./assets/css/common/variables.css">
+    <link rel="stylesheet" href="./assets/css/common/navbar.css">
+    <link rel="stylesheet" href="./assets/css/common/footer.css">
+    <link rel="stylesheet" href="./assets/css/common/cursor.css">
+
+    <!-- Assignment CSS -->
+    <link rel="stylesheet" href="./assets/css/assign3.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-dot"></span>
+
+        <h2>Sriabirami S</h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Skills.html">Skills</a>
+            </li>
+
+            <li>
+                <a href="Projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="certification.html">Certificates</a>
+            </li>
+
+            <li>
+                <a href="protosem.html">Internship</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <a href="./assets/Sriabirami_S_Resume.pdf"
+       class="resume-btn"
+       target="_blank">
+
+        <i class="bi bi-file-earmark-person"></i>
+
+        Resume
+
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="assignment-detail-hero">
+
+    <span class="detail-tag">
+
+        <i class="bi bi-broadcast-pin"></i>
+
+        Engineering Assignment
+
+    </span>
+
+
+    <h1>
+        PIR Motion Sensor
+    </h1>
+
+
+    <h2>
+        HC-SR501 + ESP8266MOD + Google Sheets
+    </h2>
+
+
+    <p>
+
+        Interfacing an HC-SR501 PIR motion sensor with an
+        ESP8266MOD and integrating the system with Google Sheets
+        for real-time IoT motion logging.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="assignment-content">
+
+
+
+<!-- =====================================================
+     01 INTRODUCTION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>01</span>
+
+        <div>
+
+            <h2>Introduction</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="split-section">
+
+        <div class="split-text">
+
+            <p>
+
+                The <strong>HC-SR501 PIR Motion Sensor</strong> is
+                commonly used for motion detection in security,
+                automation and IoT systems.
+
+            </p>
+
+            <p>
+
+                It detects changes in infrared radiation caused by
+                moving objects and generates a digital HIGH or LOW
+                output signal.
+
+            </p>
+
+            <p>
+
+                This assignment demonstrates the working of the PIR
+                sensor, oscilloscope testing, ESP8266MOD integration
+                and real-time data logging using Google Sheets.
+
+            </p>
+
+        </div>
+
+
+        <div class="single-image">
+
+            <img
+                src="./sensorimgs/pir1.png"
+                alt="PIR Sensor Setup"
+            >
+
+            <p class="image-caption">
+                PIR Sensor Testing
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     02 SPECIFICATIONS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+
+            <h2>PIR Sensor Specifications</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="spec-grid">
+
+        <div class="spec-item">
+
+            <i class="bi bi-lightning-charge"></i>
+
+            <div>
+
+                <span>Operating Voltage</span>
+
+                <strong>4.5V - 20V</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-bullseye"></i>
+
+            <div>
+
+                <span>Detection Angle</span>
+
+                <strong>Up to 120°</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-rulers"></i>
+
+            <div>
+
+                <span>Detection Range</span>
+
+                <strong>3m - 7m</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-clock"></i>
+
+            <div>
+
+                <span>Delay Time</span>
+
+                <strong>5s - 300s</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="spec-item">
+
+            <i class="bi bi-arrow-repeat"></i>
+
+            <div>
+
+                <span>Trigger Modes</span>
+
+                <strong>Retriggerable / Non-Retriggerable</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     03 WORKING PRINCIPLE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>03</span>
+
+        <div>
+
+            <h2>Working Principle</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The PIR sensor contains two infrared-sensitive elements.
+        When a moving object enters its detection field, the
+        difference in infrared radiation between the two elements
+        is detected.
+
+    </p>
+
+
+    <p>
+
+        The sensor then produces a HIGH digital signal which can
+        be read by a microcontroller such as the ESP8266MOD.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     04 STANDALONE TESTING
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>04</span>
+
+        <div>
+
+            <h2>Standalone Testing with Oscilloscope</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Before connecting the sensor to the ESP8266MOD, the PIR
+        sensor was tested independently using an oscilloscope.
+
+    </p>
+
+
+    <div class="equipment-grid">
+
+        <div class="equipment-item">
+            <i class="bi bi-cpu"></i>
+            HC-SR501 PIR Motion Sensor
+        </div>
+
+        <div class="equipment-item">
+            <i class="bi bi-display"></i>
+            Oscilloscope (MSO/DSO)
+        </div>
+
+        <div class="equipment-item">
+            <i class="bi bi-lightning"></i>
+            Power Supply (5V)
+        </div>
+
+        <div class="equipment-item">
+            <i class="bi bi-diagram-2"></i>
+            10kΩ Pull-down Resistor
+        </div>
+
+        <div class="equipment-item">
+            <i class="bi bi-bezier2"></i>
+            Jumper Wires
+        </div>
+
+    </div>
+
+
+    <div class="highlight-box">
+
+        <strong>Key Connection:</strong>
+
+        OUT pin was connected to the oscilloscope probe and a
+        10kΩ resistor was connected to ground to avoid floating
+        signals.
+
+    </div>
+
+
+    <div class="highlight-box">
+
+        <strong>Issue Fix:</strong>
+
+        The absence of output was resolved by using the pull-down
+        resistor.
+
+    </div>
+
+
+
+    <!-- =================================================
+         DSO IMAGE GALLERY
+    ================================================= -->
+
+    <div class="image-gallery">
+
+        <div class="gallery-card">
+
+            <img
+                src="./sensorimgs/pir3.png"
+                alt="PIR Sensor Testing"
+            >
+
+            <p class="image-caption">
+                PIR Sensor Testing
+            </p>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./sensorimgs/pir2.png"
+                alt="Oscilloscope Testing"
+            >
+
+            <p class="image-caption">
+                Oscilloscope Testing
+            </p>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="./sensorimgs/pir4.png"
+                alt="DSO Output"
+            >
+
+            <p class="image-caption">
+                DSO Output
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     05 ARDUINO IDE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>05</span>
+
+        <div>
+
+            <h2>Arduino IDE Setup for ESP8266MOD</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <ol class="procedure-list">
+
+        <li>
+            Install Arduino IDE from the
+            <a
+                href="https://www.arduino.cc/en/software"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                official site
+            </a>.
+        </li>
+
+        <li>
+            Add the ESP8266 board URL to Arduino IDE Preferences.
+        </li>
+
+        <li>
+            Install the ESP8266 board through Boards Manager.
+        </li>
+
+        <li>
+            Select <strong>NodeMCU 1.0 (ESP-12E Module)</strong>
+            and the correct COM port.
+        </li>
+
+    </ol>
+
+
+    <div class="highlight-box">
+
+        <strong>Driver Error Fix:</strong>
+
+        If the board fails to connect, install the CH340 driver
+        and verify the selected COM port.
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     06 CONNECTION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>06</span>
+
+        <div>
+
+            <h2>Connection: PIR Sensor + ESP8266MOD</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="connection-grid">
+
+        <div class="connection-item">
+
+            <span>VCC</span>
+
+            <strong>→ 3V3</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>GND</span>
+
+            <strong>→ GND</strong>
+
+        </div>
+
+
+        <div class="connection-item">
+
+            <span>OUT</span>
+
+            <strong>→ D5 (GPIO14)</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="single-image centered-image">
+
+        <img
+            src="./sensorimgs/pir5.png"
+            alt="PIR Sensor and ESP8266 Wiring"
+        >
+
+        <p class="image-caption">
+            PIR Sensor and ESP8266MOD Connection
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     07 BASIC ARDUINO CODE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>07</span>
+
+        <div>
+
+            <h2>Basic Arduino Code</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="code-block">
+
+<pre><code>#define PIR_PIN D5
+
+void setup() {
+    Serial.begin(115200);
+    pinMode(PIR_PIN, INPUT);
+
+    Serial.println("PIR Motion Sensor Initialized");
+}
+
+void loop() {
+
+    int motionDetected = digitalRead(PIR_PIN);
+
+    Serial.print("Motion Value: ");
+    Serial.println(motionDetected);
+
+    delay(500);
+}</code></pre>
+
+    </div>
+
+
+    <h3 class="subheading">
+        Serial Monitor Output
+    </h3>
+
+
+    <div class="single-image centered-image">
+
+        <img
+            src="./sensorimgs/pir6.png"
+            alt="Serial Monitor Output"
+        >
+
+        <p class="image-caption">
+            Serial Monitor Output
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     08 GOOGLE SHEETS
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>08</span>
+
+        <div>
+
+            <h2>IoT Integration with Google Sheets</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <ol class="procedure-list">
+
+        <li>
+            Create a Google Sheet with the headers:
+            Timestamp, Motion Status and Motion Value.
+        </li>
+
+        <li>
+            Open Apps Script from Extensions and add the following code.
+        </li>
+
+    </ol>
+
+
+    <div class="code-block">
+
+<pre><code>function doGet(e) {
+
+    var sheet =
+        SpreadsheetApp
+        .getActiveSpreadsheet()
+        .getActiveSheet();
+
+    var motionStatus =
+        e.parameter.motionStatus || "Unknown";
+
+    var motionValue =
+        e.parameter.motionValue || "N/A";
+
+    var timestamp = new Date();
+
+    sheet.appendRow([
+        timestamp,
+        motionStatus,
+        motionValue
+    ]);
+
+    return ContentService
+        .createTextOutput("Data logged successfully");
+}</code></pre>
+
+    </div>
+
+
+    <p>
+
+        Deploy the script as a Web App with appropriate access
+        permissions and copy the generated URL.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     09 ESP8266 GOOGLE SHEETS CODE
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>09</span>
+
+        <div>
+
+            <h2>ESP8266 Arduino Code for Google Sheets Logging</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="code-block">
+
+<pre><code>#include &lt;ESP8266WiFi.h&gt;
+#include &lt;WiFiClientSecure.h&gt;
+
+const char* ssid = "&lt;YOUR_WIFI_NAME&gt;";
+const char* password = "&lt;YOUR_WIFI_PASSWORD&gt;";
+
+const char* host = "script.google.com";
+
+const char* fullUrl = "&lt;YOUR_SCRIPT_URL&gt;";
+
+WiFiClientSecure client;
+
+const int pirPin = D5;
+
+void setup() {
+
+    Serial.begin(115200);
+
+    pinMode(pirPin, INPUT);
+
+    WiFi.begin(ssid, password);
+
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+    }
+
+    client.setInsecure();
+}
+
+void loop() {
+
+    int motionValue = digitalRead(pirPin);
+
+    String motionStatus =
+        (motionValue == 1)
+        ? "Motion Detected"
+        : "No Motion";
+
+    motionStatus.replace(" ", "%20");
+
+    String url =
+        String(fullUrl)
+        + "?motionValue="
+        + String(motionValue)
+        + "&motionStatus="
+        + motionStatus;
+
+    if (client.connect(host, 443)) {
+
+        client.print(
+            String("GET ")
+            + url
+            + " HTTP/1.1\r\n"
+            + "Host: "
+            + host
+            + "\r\n"
+            + "Connection: close\r\n\r\n"
+        );
+    }
+
+    delay(5000);
+}</code></pre>
+
+    </div>
+
+
+    <h3 class="subheading">
+        Google Sheets Output
+    </h3>
+
+
+    <div class="single-image centered-image">
+
+        <img
+            src="./sensorimgs/pir7.jpg"
+            alt="Google Sheets Output"
+        >
+
+        <p class="image-caption">
+            Real-time Google Sheets Output
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     10 CONCLUSION
+===================================================== -->
+
+<section class="content-card">
+
+    <div class="section-heading">
+
+        <span>10</span>
+
+        <div>
+
+            <h2>Conclusion</h2>
+
+            <div class="heading-line"></div>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        This project demonstrated successful motion detection and
+        real-time IoT logging using an HC-SR501 PIR sensor,
+        ESP8266MOD and Google Sheets.
+
+    </p>
+
+
+    <p>
+
+        The assignment provided practical experience in sensor
+        interfacing, microcontroller programming, oscilloscope
+        testing and cloud-based data logging.
+
+    </p>
+
+
+    <div class="documentation-box">
+
+        <div>
+
+            <i class="bi bi-file-earmark-pdf-fill"></i>
+
+            <div>
+
+                <h3>Assignment Documentation</h3>
+
+                <p>
+                    View the complete PIR Motion Sensor documentation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://github.com/Sriabirami-S/Internship/blob/main/Assignments/PIR%20MOTION%20SENSOR%20HC-SR501.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="documentation-btn"
+        >
+
+            <i class="bi bi-file-earmark-text"></i>
+
+            View Documentation
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-icons">
+
+            <a
+                href="https://www.linkedin.com/in/sriabiramis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abiramisaravanan100@gmail.com"
+                aria-label="Email"
+            >
+                <i class="bi bi-envelope"></i>
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/abi__0210/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                <i class="bi bi-instagram"></i>
+            </a>
+
+
+            <a
+                href="tel:+9361275297"
+                aria-label="Phone"
+            >
+                <i class="bi bi-telephone"></i>
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026
+            <span class="footer-name">Sriabirami S</span>.
+            Built with passion for software development.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<div class="pointer"></div>
+
+
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/cursor.js"></script>
+
+</body>
+
+</html>

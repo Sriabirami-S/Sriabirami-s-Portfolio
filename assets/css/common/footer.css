@@ -1,0 +1,209 @@
+/* =========================================
+   COMMON FOOTER
+   Used across all portfolio pages
+========================================= */
+
+.site-footer {
+
+    width: 100%;
+
+    margin-top: 80px;
+
+    padding: 35px 20px 30px;
+
+    background: #080808;
+
+    border-top: 1px solid rgba(18, 145, 236, 0.18);
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
+
+.footer-content {
+
+    width: min(92%, 1200px);
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 22px;
+
+}
+
+
+/* =========================================
+   BLUE CIRCLES + WHITE ICONS
+========================================= */
+
+.footer-icons a {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    border: 1px solid #1291ec;
+
+    border-radius: 50%;
+
+    background: #1291ec;
+
+    transition: var(--transition);
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.footer-icons a:hover {
+
+    color: white;
+
+    border-color: #1291ec;
+
+    background: #0d7dcc;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 18px rgba(18, 145, 236, 0.45);
+
+}
+
+
+/* =========================================
+   FOOTER TEXT
+========================================= */
+
+.footer-content p {
+
+    margin: 0;
+
+    color: var(--muted-color);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   FOOTER NAME
+========================================= */
+
+.footer-name {
+
+    color: var(--text-color);
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   FOOTER MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .site-footer {
+
+        margin-top: 60px;
+
+        padding: 30px 15px 25px;
+
+    }
+
+
+    .footer-icons {
+
+        gap: 14px;
+
+    }
+
+
+    .footer-icons a {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+
+    }
+
+
+    .footer-content p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .footer-icons {
+
+        gap: 10px;
+
+    }
+
+
+    .footer-icons a {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 17px;
+
+    }
+
+}

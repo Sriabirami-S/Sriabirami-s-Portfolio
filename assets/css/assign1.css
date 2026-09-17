@@ -1,0 +1,951 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #050816 0%,
+            #081221 45%,
+            #050816 100%
+        );
+
+    color: white;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.assignment-detail-hero {
+
+    padding: 120px 10% 80px;
+
+    text-align: center;
+
+}
+
+
+.detail-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    background: rgba(56, 189, 248, 0.1);
+
+    border: 1px solid rgba(56, 189, 248, 0.4);
+
+    border-radius: 50px;
+
+    color: #38bdf8;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.assignment-detail-hero h1 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 64px;
+
+    line-height: 1.15;
+
+    margin-bottom: 10px;
+
+}
+
+
+.assignment-detail-hero h2 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 32px;
+
+    color: #38bdf8;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+
+}
+
+
+.assignment-detail-hero p {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #94a3b8;
+
+    font-size: 19px;
+
+    line-height: 32px;
+
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.assignment-content {
+
+    width: 88%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   CONTENT CARD
+========================================= */
+
+.content-card {
+
+    position: relative;
+
+    margin-bottom: 45px;
+
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(16px);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.content-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(56, 189, 248, 0.5);
+
+    box-shadow:
+        0 0 35px rgba(56, 189, 248, 0.12);
+
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.section-heading > span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 52px;
+
+    height: 52px;
+
+    border-radius: 15px;
+
+    background: rgba(56, 189, 248, 0.12);
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+
+    color: #38bdf8;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 700;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 32px;
+
+    line-height: 1.3;
+
+}
+
+
+.heading-line {
+
+    width: 60px;
+
+    height: 3px;
+
+    margin-top: 8px;
+
+    border-radius: 10px;
+
+    background: #38bdf8;
+
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.content-card > p {
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 31px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.image-card {
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 35px auto 15px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+
+.image-card img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.image-card:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE GALLERY
+========================================= */
+
+.image-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    justify-items: center;
+}
+
+
+.image-gallery .image-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+}
+
+
+
+
+/* =========================================
+   SPECIFICATIONS
+========================================= */
+
+.spec-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 30px;
+
+}
+
+
+.spec-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 16px;
+
+    transition: 0.35s ease;
+
+}
+
+
+.spec-item:hover {
+
+    border-color: rgba(56, 189, 248, 0.4);
+
+    transform: translateY(-4px);
+
+}
+
+
+.spec-item > i {
+
+    color: #38bdf8;
+
+    font-size: 22px;
+
+}
+
+
+.spec-item span {
+
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.spec-item strong {
+
+    color: #e2e8f0;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   PROCEDURE
+========================================= */
+
+.procedure-step {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+}
+
+
+.step-number {
+
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(56, 189, 248, 0.12);
+
+    color: #38bdf8;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 700;
+
+}
+
+
+.procedure-step h3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.procedure-step p {
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+
+    line-height: 29px;
+
+}
+
+
+
+
+/* =========================================
+   CHALLENGES
+========================================= */
+
+.challenge-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.challenge-item {
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 20px;
+
+    transition: 0.35s ease;
+
+}
+
+
+.challenge-item:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(56, 189, 248, 0.4);
+
+}
+
+
+.challenge-item i {
+
+    font-size: 28px;
+
+    color: #38bdf8;
+
+}
+
+
+.challenge-item h3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    margin: 15px 0 10px;
+
+}
+
+
+.challenge-item p {
+
+    color: #94a3b8;
+
+    line-height: 28px;
+
+}
+
+
+/* =========================================
+   LEARNING OUTCOMES
+========================================= */
+
+.learning-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.learning-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+}
+
+
+.learning-list i {
+
+    color: #38bdf8;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   DOCUMENTATION
+========================================= */
+
+.documentation-box {
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background: rgba(56, 189, 248, 0.06);
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    border-radius: 20px;
+
+}
+
+
+.documentation-box > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.documentation-box > div > i {
+
+    font-size: 35px;
+
+    color: #38bdf8;
+
+}
+
+
+.documentation-box h3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 18px;
+
+}
+
+
+.documentation-box p {
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+
+}
+
+
+.documentation-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    background: #38bdf8;
+
+    color: #081221;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.35s ease;
+
+}
+
+
+.documentation-btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.4);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+
+    margin-top: 80px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .assignment-detail-hero h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .assignment-detail-hero h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .assignment-detail-hero p {
+
+        font-size: 17px;
+
+    }
+
+
+    .spec-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .content-card {
+
+        padding: 35px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .assignment-detail-hero {
+
+        padding:
+            90px 20px 55px;
+
+    }
+
+
+    .assignment-detail-hero h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .assignment-detail-hero h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .assignment-detail-hero p {
+
+        font-size: 16px;
+
+        line-height: 28px;
+
+    }
+
+
+    .assignment-content {
+
+        width: 92%;
+
+    }
+
+
+    .content-card {
+
+        padding: 25px;
+
+        border-radius: 22px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .section-heading {
+
+        gap: 12px;
+
+    }
+
+
+    .section-heading > span {
+
+        min-width: 43px;
+
+        height: 43px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .content-card > p {
+
+        font-size: 16px;
+
+        line-height: 28px;
+
+    }
+
+
+    .procedure-step {
+
+        gap: 13px;
+
+    }
+
+
+    .procedure-step h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .procedure-step p {
+
+        font-size: 15px;
+
+        line-height: 26px;
+
+    }
+
+
+    .image-gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .challenge-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .documentation-box {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .documentation-btn {
+
+        justify-content: center;
+
+    }
+
+}
+/* =========================================
+   TEXT + IMAGE SIDE BY SIDE
+========================================= */
+
+.image-text-layout {
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.65fr;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-top: 25px;
+}
+
+
+.image-text-content p {
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 31px;
+
+    margin-bottom: 20px;
+}
+
+
+.image-text-layout > div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.image-text-layout .image-card {
+
+    width: 100%;
+
+    max-width: 360px;
+
+    margin: 0 auto;
+}
+
+
+.image-text-layout .image-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+.image-caption {
+
+    width: 100%;
+
+    text-align: center !important;
+
+    color: #64748b !important;
+
+    font-size: 14px !important;
+
+    margin: 10px auto 30px !important;
+}

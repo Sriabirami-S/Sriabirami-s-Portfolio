@@ -1,0 +1,106 @@
+/* =========================================================
+   CUSTOM CURSOR
+   ========================================================= */
+
+/* Main cursor */
+
+.pointer {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background: var(--primary-color);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+
+    mix-blend-mode: screen;
+
+    filter: blur(2px);
+
+    transition:
+        width 0.1s ease-out,
+        height 0.1s ease-out,
+        opacity 0.2s ease-in-out;
+}
+
+
+/* Cursor trail particles */
+
+.trail {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    background: var(--primary-color);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 9998;
+
+    opacity: 0;
+
+    filter: blur(2px);
+
+    transition:
+        opacity 0.3s ease-in-out,
+        transform 0.2s ease-out;
+}
+
+
+/* =========================================================
+   HOVER STATE
+   ========================================================= */
+
+/*
+   When the cursor is over something clickable,
+   JavaScript can add the "cursor-hover" class.
+*/
+
+.pointer.cursor-hover {
+
+    width: 32px;
+    height: 32px;
+
+    opacity: 0.75;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+/*
+   Touch devices don't need a custom mouse cursor.
+*/
+
+@media (hover: none), (pointer: coarse) {
+
+    body {
+        cursor: auto;
+    }
+
+    .pointer,
+    .trail {
+        display: none;
+    }
+
+}

@@ -1,0 +1,1500 @@
+/* =====================================================
+   CERTIFICATIONS PAGE
+   Sriabirami S Portfolio
+===================================================== */
+
+
+/* =====================================================
+   PAGE RESET
+===================================================== */
+
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    width:100%;
+    min-height:100%;
+
+    background:#000000 !important;
+    color:#ffffff;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+main{
+
+    width:100%;
+    min-height:100vh;
+
+    background:#000000 !important;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.certification-hero{
+
+    width:min(900px,92%);
+
+    margin:120px auto 70px;
+
+    text-align:center;
+
+    background:#000000 !important;
+
+}
+
+
+.certification-hero .section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    margin-bottom:22px;
+
+    border-radius:30px;
+
+    background:rgba(18,145,236,.08);
+
+    border:1px solid rgba(18,145,236,.35);
+
+    color:rgb(18,145,236);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+.certification-hero h1{
+
+    margin:0 0 20px;
+
+    color:#ffffff !important;
+
+    font-size:clamp(2.5rem,5vw,4.2rem);
+
+    font-weight:700;
+
+    line-height:1.15;
+
+}
+
+
+.certification-hero p{
+
+    width:min(700px,100%);
+
+    margin:0 auto;
+
+    color:#b9c6d8 !important;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   MAIN CERTIFICATION SECTION
+===================================================== */
+
+.certifications-section{
+
+    width:min(1100px,92%);
+
+    margin:0 auto;
+
+    padding:0 0 25px;
+
+    background:#000000 !important;
+
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.certifications-intro{
+
+    width:min(750px,100%);
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+}
+
+
+.certifications-intro h2{
+
+    margin:0 0 12px;
+
+    color:#ffffff !important;
+
+    font-size:clamp(1.8rem,4vw,2.5rem);
+
+}
+
+
+.certifications-intro p{
+
+    margin:0;
+
+    color:#aebfd2 !important;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   CERTIFICATION LIST
+===================================================== */
+
+.certifications-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+/* =====================================================
+   CERTIFICATION CARD
+===================================================== */
+
+.certificate-card{
+
+    display:grid;
+
+    grid-template-columns:330px minmax(0,1fr);
+
+    width:100%;
+
+    min-height:330px;
+
+    overflow:hidden;
+
+    background:#111111 !important;
+
+    border:1px solid rgba(18,145,236,.18);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.certificate-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(18,145,236,.50);
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.50),
+
+        0 0 25px rgba(18,145,236,.15);
+
+}
+
+
+/* =====================================================
+   CERTIFICATE IMAGE AREA
+===================================================== */
+
+.certificate-preview{
+
+    position:relative;
+
+    min-height:330px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+    background:#070707 !important;
+
+    border-right:1px solid rgba(18,145,236,.12);
+
+    overflow:hidden;
+
+}
+
+
+.certificate-preview img{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:8px;
+
+    transition:transform .45s ease;
+
+}
+
+
+.certificate-card:hover
+.certificate-preview img{
+
+    transform:scale(1.035);
+
+}
+
+
+/* =====================================================
+   IMAGE OVERLAY
+===================================================== */
+
+.certificate-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.68);
+
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+}
+
+
+.certificate-card:hover
+.certificate-overlay{
+
+    opacity:1;
+
+}
+
+
+.certificate-overlay a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    background:rgb(18,145,236);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    box-shadow:
+        0 0 20px rgba(18,145,236,.20);
+
+    transition:.3s ease;
+
+}
+
+
+.certificate-overlay a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(18,145,236,.45);
+
+}
+
+
+/* =====================================================
+   CERTIFICATE CONTENT
+===================================================== */
+
+.certificate-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:38px 40px;
+
+    min-width:0;
+
+}
+
+
+.certificate-type{
+
+    width:max-content;
+
+    margin-bottom:10px;
+
+    color:rgb(18,145,236);
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+.certificate-content h2{
+
+    margin:0 0 10px;
+
+    color:#ffffff !important;
+
+    font-size:1.55rem;
+
+    line-height:1.3;
+
+}
+
+
+.issuer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:0 0 22px;
+
+    color:#b9c6d8 !important;
+
+    font-size:.9rem;
+
+}
+
+
+.issuer i{
+
+    color:rgb(18,145,236);
+
+}
+
+
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.certificate-details{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+.certificate-details div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+    min-width:120px;
+
+}
+
+
+.certificate-details span{
+
+    color:#71859c !important;
+
+    font-size:.70rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.8px;
+
+}
+
+
+.certificate-details strong{
+
+    max-width:350px;
+
+    color:#e7f2ff !important;
+
+    font-size:.82rem;
+
+    font-weight:500;
+
+    word-break:break-word;
+
+}
+
+
+/* =====================================================
+   SKILL TAGS
+===================================================== */
+
+.certificate-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-bottom:25px;
+
+}
+
+
+.certificate-skills span{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:rgba(18,145,236,.07);
+
+    border:1px solid rgba(18,145,236,.20);
+
+    color:rgb(18,145,236);
+
+    font-size:.75rem;
+
+    font-weight:500;
+
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.certificate-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+.cert-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:7px;
+
+    padding:10px 16px;
+
+    border-radius:9px;
+
+    text-decoration:none;
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+
+.primary-btn{
+
+    background:rgb(18,145,236);
+
+    color:#ffffff;
+
+}
+
+
+.primary-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(18,145,236,.40);
+
+}
+
+
+.secondary-btn{
+
+    background:transparent;
+
+    border:1px solid rgba(18,145,236,.35);
+
+    color:rgb(18,145,236);
+
+} 
+
+
+.secondary-btn:hover{
+
+    background:rgba(18,145,236,.08);
+
+    border-color:rgb(18,145,236);
+
+    transform:translateY(-2px);
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENTS SECTION
+===================================================== */
+
+.achievements-section{
+
+    width:min(1100px,92%);
+
+    margin:55px auto 0;
+
+    padding:0 0 25px;
+
+    background:#000000 !important;
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT HEADING
+===================================================== */
+
+.achievement-heading{
+
+    width:min(750px,100%);
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+}
+
+
+.achievement-heading .section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    margin-bottom:18px;
+
+    border-radius:30px;
+
+    background:rgba(18,145,236,.08);
+
+    border:1px solid rgba(18,145,236,.35);
+
+    color:rgb(18,145,236);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+
+.achievement-heading h2{
+
+    margin:0 0 12px;
+
+    color:#ffffff !important;
+
+    font-size:clamp(1.8rem,4vw,2.5rem);
+
+}
+
+
+.achievement-heading p{
+
+    margin:0;
+
+    color:#aebfd2 !important;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT LIST
+===================================================== */
+
+.achievements-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT CARD
+===================================================== */
+
+.achievement-card{
+
+    display:grid;
+
+    grid-template-columns:330px minmax(0,1fr);
+
+    width:100%;
+
+    min-height:330px;
+
+    overflow:hidden;
+
+    background:#111111 !important;
+
+    border:1px solid rgba(18,145,236,.18);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.achievement-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(18,145,236,.50);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.50),
+        0 0 25px rgba(18,145,236,.15);
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT PREVIEW / IMAGE AREA
+===================================================== */
+
+.achievement-preview{
+
+    position:relative;
+
+    min-height:330px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+    background:#070707 !important;
+
+    border-right:1px solid rgba(18,145,236,.12);
+
+    overflow:hidden;
+
+}
+
+
+.achievement-preview img{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:8px;
+
+    transition:transform .45s ease;
+
+}
+
+
+.achievement-card:hover
+.achievement-preview img{
+
+    transform:scale(1.035);
+
+}
+
+
+/* =====================================================
+   IMAGE OVERLAY
+===================================================== */
+
+.achievement-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.68);
+
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+}
+
+
+.achievement-card:hover
+.achievement-overlay{
+
+    opacity:1;
+
+}
+
+
+.achievement-overlay a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    background:rgb(18,145,236);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    box-shadow:
+        0 0 20px rgba(18,145,236,.20);
+
+    transition:.3s ease;
+
+}
+
+
+.achievement-overlay a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(18,145,236,.45);
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT CONTENT
+===================================================== */
+
+.achievement-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:38px 40px;
+
+    min-width:0;
+
+}
+
+
+.achievement-type{
+
+    width:max-content;
+
+    margin-bottom:10px;
+
+    color:rgb(18,145,236);
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+.achievement-content h2{
+
+    margin:0 0 10px;
+
+    color:#ffffff !important;
+
+    font-size:1.55rem;
+
+    line-height:1.3;
+
+}
+
+
+.achievement-issuer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:0 0 22px;
+
+    color:#b9c6d8 !important;
+
+    font-size:.9rem;
+
+}
+
+
+.achievement-issuer i{
+
+    color:rgb(18,145,236);
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT DETAILS
+===================================================== */
+
+.achievement-details{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+.achievement-details div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+    min-width:120px;
+
+}
+
+
+.achievement-details span{
+
+    color:#71859c !important;
+
+    font-size:.70rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.8px;
+
+}
+
+
+.achievement-details strong{
+
+    max-width:350px;
+
+    color:#e7f2ff !important;
+
+    font-size:.82rem;
+
+    font-weight:500;
+
+    word-break:break-word;
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT TAGS
+===================================================== */
+
+.achievement-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-bottom:25px;
+
+}
+
+
+.achievement-skills span{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:rgba(18,145,236,.07);
+
+    border:1px solid rgba(18,145,236,.20);
+
+    color:rgb(18,145,236);
+
+    font-size:.75rem;
+
+    font-weight:500;
+
+}
+
+
+/* =====================================================
+   ACHIEVEMENT ACTIONS
+===================================================== */
+
+.achievement-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+.achievement-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:7px;
+
+    padding:10px 16px;
+
+    border-radius:9px;
+
+    text-decoration:none;
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+
+.achievement-btn.primary-btn{
+
+    background:rgb(18,145,236);
+
+    color:#ffffff;
+
+}
+
+
+.achievement-btn.primary-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(18,145,236,.40);
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .achievement-card{
+
+        grid-template-columns:280px minmax(0,1fr);
+
+    }
+
+
+    .achievement-content{
+
+        padding:30px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px){
+
+    .achievements-section{
+
+        width:92%;
+
+        margin-top:75px;
+
+    }
+
+
+    .achievement-card{
+
+        display:flex;
+
+        flex-direction:column;
+
+        min-height:auto;
+
+    }
+
+
+    .achievement-preview{
+
+        width:100%;
+
+        height:250px;
+
+        min-height:250px;
+
+        padding:15px;
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(18,145,236,.12);
+
+    }
+
+
+    .achievement-content{
+
+        padding:25px;
+
+    }
+
+
+    .achievement-content h2{
+
+        font-size:1.35rem;
+
+    }
+
+
+    .achievement-details{
+
+        gap:15px;
+
+    }
+
+
+    .achievement-actions{
+
+        width:100%;
+
+    }
+
+
+    .achievement-btn{
+
+        flex:1;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:480px){
+
+    .achievement-preview{
+
+        height:220px;
+
+        min-height:220px;
+
+    }
+
+
+    .achievement-content{
+
+        padding:20px;
+
+    }
+
+
+    .achievement-details{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+
+    .achievement-actions{
+
+        flex-direction:column;
+
+    }
+
+
+    .achievement-btn{
+
+        width:100%;
+
+        flex:none;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .certificate-card{
+
+        grid-template-columns:280px minmax(0,1fr);
+
+    }
+
+
+    .certificate-content{
+
+        padding:30px;
+
+    }
+
+
+    .achievement-card{
+
+        grid-template-columns:auto minmax(0,1fr);
+
+    }
+
+
+    .achievement-image{
+
+        grid-column:1 / -1;
+
+        height:220px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px){
+
+    .certification-hero{
+
+        width:90%;
+
+        margin-top:110px;
+
+        margin-bottom:55px;
+
+    }
+
+
+    .certification-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .certification-hero p{
+
+        font-size:.92rem;
+
+    }
+
+
+    .certifications-section{
+
+        width:92%;
+
+    }
+
+
+    .certificate-card{
+
+        display:flex;
+
+        flex-direction:column;
+
+        min-height:auto;
+
+    }
+
+
+    .certificate-preview{
+
+        width:100%;
+
+        height:250px;
+
+        min-height:250px;
+
+        padding:15px;
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(18,145,236,.12);
+
+    }
+
+
+    .certificate-content{
+
+        padding:25px;
+
+    }
+
+
+    .certificate-content h2{
+
+        font-size:1.35rem;
+
+    }
+
+
+    .certificate-details{
+
+        gap:15px;
+
+    }
+
+
+    .certificate-actions{
+
+        width:100%;
+
+    }
+
+
+    .cert-btn{
+
+        flex:1;
+
+    }
+
+
+    .achievements-section{
+
+        margin-top:75px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:480px){
+
+    .certification-hero{
+
+        margin-top:100px;
+
+    }
+
+
+    .certification-hero h1{
+
+        font-size:2rem;
+
+    }
+
+
+    .certification-hero p{
+
+        font-size:.87rem;
+
+    }
+
+
+    .certifications-intro h2{
+
+        font-size:1.65rem;
+
+    }
+
+
+    .certificate-preview{
+
+        height:220px;
+
+        min-height:220px;
+
+    }
+
+
+    .certificate-content{
+
+        padding:20px;
+
+    }
+
+
+    .certificate-details{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+
+    .certificate-actions{
+
+        flex-direction:column;
+
+    }
+
+
+    .cert-btn{
+
+        width:100%;
+
+        flex:none;
+
+    }
+
+
+    .achievement-card{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:20px;
+
+    }
+
+
+    .achievement-image{
+
+        width:100%;
+
+        height:190px;
+
+    }
+
+}
